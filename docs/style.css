@@ -1,6 +1,9 @@
-body{
+*{
     padding: 0;
     margin: 0;
+}
+
+body{
     font-family: roboto;
 }
 
@@ -10,79 +13,87 @@ body{
 
 .nav_container{
     border: 1px solid rgba(0, 0, 0, 0.267);
-    width: 16em;
-    height: 100vh;
+    width: 20em;
+    height: 100%;
     padding: 0 0 0 1em;
     background-color: white;
-    z-index: 1;
-    position:fixed;
+    display: block;
+    position: sticky;
+    flex-basis: 1;
+}
+
+
+.logo img{
+    width: 115px;
+    height: 45px;
+    margin-top: 2em;
 }
 
 .list{
     list-style-type: none;
-    height: 70vh;
+    height: 725px;
     flex-direction: column;
     padding-left: 0;
     display: block;
+    margin-top: 2em;
 }
 
 
 .list li{
     display: block;
     align-items: center;
-    margin-top: 2em;
-    width: auto;
-    height: auto;
-    padding: 5px;
-    text-align: left;
+    font-size: 14px;
+    margin-bottom: 1.2em;
 }
 
 .list a{
     text-decoration: none;
     color: black;
-    font-size: 1.1em;
-    padding: 0;
-    margin: 0;
+    font-size: 1.2em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;    
+}
+
+.list img{
+    margin-right: 12px;
 }
 
 .bottom-list{
-    margin-top:1em;;
-    height: 10em;
+    height: fit-content;
 }
 
 .nav_list img{
     display: inline-block;
     align-items: center;
     justify-content: start;
-    width: 25px;
+    width: 20px;
     aspect-ratio: 1;
     color: white;
 }
 
-.logo img{
-    width: 120px;
-    height: 52px;
-    
-    
-    margin-top: 2em;
-}
 
-.perfil_container{
-    width: 100em;
+.middle_container{
+    border: 1px solid;
+    width: 100vw;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    flex-direction: column;
+    padding-top: 15px;
 }
 
-.perfil_container ul{
+.middle_container ul{
     list-style-type: none;
     display: flex;
+    padding: 0;
 }
+
 .perfil_img{
-    width: 75px;
+    width: 60px;
     aspect-ratio: 1;
     border-radius: 50%;
     background-color: #ccc;
-    display: block;
+    display: inline-block;
+    margin: 10px;
 }
