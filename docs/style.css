@@ -12,13 +12,11 @@ body{
 }
 
 .nav_container{
-    border: 1px solid rgba(0, 0, 0, 0.267);
-    width: 20em;
+    border-right: 1px solid rgba(0, 0, 0, 0.267);
+    width: 244px;
     height: 100%;
-    padding: 0 0 0 1em;
+    padding: 20px;
     background-color: white;
-    display: block;
-    position: sticky;
     flex-basis: 1;
 }
 
@@ -26,34 +24,38 @@ body{
 .logo img{
     width: 115px;
     height: 45px;
-    margin-top: 2em;
 }
 
 .list{
     list-style-type: none;
     height: 725px;
-    flex-direction: column;
-    padding-left: 0;
-    display: block;
+    width: 220px;
     margin-top: 2em;
+    transition: all .2s ease;
 }
 
 
 .list li{
-    display: block;
-    align-items: center;
     font-size: 14px;
-    margin-bottom: 1.2em;
 }
+
 
 .list a{
     text-decoration: none;
     color: black;
     font-size: 1.2em;
-    width: 80%;
+    padding: 12px;
+    margin: 4px 0 4px 0;
+    width: 100%;
     display: flex;
-    align-items: center;
-    margin-top: 2em;    
+    transition: all .2s ease;
+}
+
+.list a:hover{
+    transform: scale(1.1);
+    background-color: #cccccc5b;
+    transition: all .2s ease;
+    border-radius: 5px;
 }
 
 .list img{
@@ -75,18 +77,14 @@ body{
 
 
 .middle_container{
-    border: 1px solid;
-    width: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 15px;
 }
-
 .middle_container ul{
     list-style-type: none;
     display: flex;
-    padding: 0;
 }
 
 .perfil_img{
@@ -97,3 +95,33 @@ body{
     display: inline-block;
     margin: 10px;
 }
+
+.post_container{
+    padding-top: 1em;
+}
+
+.post_upper_content{
+    display: flex;
+    padding-left: 4px;
+    padding-bottom: 12px;
+}
+.post_upper_content p{
+    margin-left: 2.5em;
+}
+
+.upper_post_area_img{
+    width: 32px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: block;
+    position: absolute;
+}
+
+.post{
+    background-color: black;
+    width: 500px;
+    display: block;
+    aspect-ratio: 1;
+}
+
