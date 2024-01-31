@@ -14,10 +14,10 @@ body{
 .nav_container{
     border-right: 1px solid rgba(0, 0, 0, 0.267);
     width: 244px;
-    height: 100%;
     padding: 20px;
     background-color: white;
-    flex-basis: 1;
+    flex-shrink: 0;
+    display: block;
 }
 
 
@@ -48,11 +48,9 @@ body{
     margin: 4px 0 4px 0;
     width: 100%;
     display: flex;
-    transition: all .2s ease;
 }
 
 .list a:hover{
-    transform: scale(1.1);
     background-color: #cccccc5b;
     transition: all .2s ease;
     border-radius: 5px;
@@ -60,6 +58,11 @@ body{
 
 .list img{
     margin-right: 12px;
+}
+
+.list a img:hover{
+    
+    transform: scale(1.1);
 }
 
 .bottom-list{
@@ -78,6 +81,7 @@ body{
 
 .middle_container{
     display: flex;
+    width: 100%;
     align-items: center;
     flex-direction: column;
     padding-top: 15px;
