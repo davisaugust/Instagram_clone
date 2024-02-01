@@ -91,6 +91,11 @@ body{
     display: flex;
 }
 
+.spaced_container{
+    display: flex;
+    margin: 0 auto;
+}
+
 .perfil_img{
     width: 60px;
     aspect-ratio: 1;
@@ -128,4 +133,3 @@ body{
     display: block;
     aspect-ratio: 1;
 }
-
