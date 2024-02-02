@@ -133,3 +133,12 @@ body{
     display: block;
     aspect-ratio: 1;
 }
+
+.side_perfil_container{
+    height: 100%;
+    border: 1px solid;
+}
+.side_perfil{
+    margin-top: 10em;
+    margin-left: 5em;
+}
