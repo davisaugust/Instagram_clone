@@ -31,6 +31,7 @@ body{
     height: 725px;
     width: 220px;
     transition: all .2s ease;
+    padding-top: 1em;
 }
 
 
@@ -62,7 +63,7 @@ body{
 
 .bottom-list{
     height: fit-content;
-    padding-top: 2em;
+    padding-top: 1.5em;
 }
 
 .nav_list img{
@@ -88,6 +89,33 @@ body{
     display: flex;
 }
 
+.buttons{
+    position: absolute;
+    top: 2.7em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+    background-color: transparent;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+}
+
+.arrow-btn{
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.5em;
+    width: 50px;
+    aspect-ratio: 1;
+    display: block;
+    color: black;
+}
+
+
 .spaced_container{
     display: flex;
     margin: 0 auto;
@@ -100,6 +128,9 @@ body{
     background-color: #ccc;
     display: inline-block;
     margin: 10px;
+    background-image: url(images/pessoa.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .post_container{
@@ -119,7 +150,9 @@ body{
     width: 32px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: #ccc;
+    background-image: url(images/pessoa.jpg);
+    background-position: center;
+    background-size: cover;
     display: block;
     position: absolute;
 }
@@ -153,14 +186,16 @@ body{
     margin-right: 1em;
     border-radius: 50%;
     display: block;
-    background-color: #ccc;
+    background-image: url(images/pessoa.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .perfil-flex{
     display: flex;
     margin-top: 2em;
 }
 .side_perfil_content{
-    margin-right: 6em;
+    margin-right: 8em;
 }
 
 .name{
