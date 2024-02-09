@@ -115,6 +115,21 @@ body{
     color: black;
 }
 
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides li {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
 
 .spaced_container{
     display: flex;
