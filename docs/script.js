@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             prevBtn.style.display = "block";
         }
-        if (slideIndex === slideItems.length - 1) {
+        if (slideIndex === slideItems.length === 1) {
             nextBtn.style.display = "none";
         } else {
             nextBtn.style.display = "block";
