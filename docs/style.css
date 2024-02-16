@@ -94,26 +94,28 @@ body{
     top: 2.7em;
     width: 100%;
     display: flex;
+    display: flex;
     justify-content: space-between;
 }
 
 .buttons button{
-    background-color: transparent;
     cursor: pointer;
-    justify-content: center;
-    display: flex;
+    width: fit-content;
+    height: 25px;
+    background-color: transparent;
 }
 
 .arrow-btn{
-    background: transparent;
-    outline: none;
     border: none;
     font-size: 1.5em;
-    width: 50px;
-    aspect-ratio: 1;
     display: block;
-    color: black;
 }
+
+.prev
+.next{
+    position: absolute;
+}
+
 
 .carousel {
     overflow: hidden;
@@ -122,13 +124,10 @@ body{
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    width: 570px;
+    transition: transform 0.3s ease-in;
 }
 
-.slides li {
-    width: 100%;
-    flex: 0 0 auto;
-}
 
 
 .spaced_container{
@@ -146,6 +145,7 @@ body{
     background-image: url(images/pessoa.jpg);
     background-position: center;
     background-size: cover;
+    border: 1px solid black;
 }
 
 .post_container{
@@ -168,7 +168,6 @@ body{
     background-image: url(images/pessoa.jpg);
     background-position: center;
     background-size: cover;
-    display: block;
     position: absolute;
 }
 

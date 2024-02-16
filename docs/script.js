@@ -6,22 +6,22 @@ document.addEventListener("DOMContentLoaded", function() {
     const slideWidth = slideItems[0].offsetWidth;
     let slideIndex = 0;
 
-    function updateButtonsVisibility() {
-        if (slideIndex === 0) {
-            prevBtn.style.display = "none";
-        } else {
-            prevBtn.style.display = "block";
-        }
-        if (slideIndex === slideItems.length === 1) {
-            nextBtn.style.display = "none";
-        } else {
-            nextBtn.style.display = "block";
-        }
-    }
+     function updateButtonsVisibility() {
+         if (slideIndex === 0) {
+             nextBtn.style.display = "block";
+         } else {
+             prevBtn.style.display = "block";
+         }
+         if (slideIndex === slideItems.length === 1) {
+             nextBtn.style.display = "none";
+         } else {
+             nextBtn.style.display = "block";
+         }
+     }
 
     nextBtn.addEventListener("click", () => {
-        if (slideIndex < slideItems.length - 1) {
-            slideIndex++;
+        if (slideIndex < slideItems.length - 5) {
+            slideIndex+=4;
             slides.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
             updateButtonsVisibility();
         }
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     prevBtn.addEventListener("click", () => {
         if (slideIndex > 0) {
-            slideIndex--;
+            slideIndex-=4;
             slides.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
             updateButtonsVisibility();
         }
