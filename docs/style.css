@@ -16,7 +16,7 @@ body{
     border-right: 1px solid rgba(0, 0, 0, 0.267);
     width: 244px;
     background-color: white;
-    padding: 20px;
+    padding: 8px 12px 20px 12px;
     flex-shrink: 0;
 }
 
@@ -24,6 +24,7 @@ body{
 .logo img{
     width: 115px;
     height: 45px;
+    margin-bottom: 19px;
 }
 
 .list{
@@ -36,7 +37,7 @@ body{
 
 
 .list li{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 
@@ -48,6 +49,7 @@ body{
     margin: 4px 0 4px 0;
     width: 100%;
     display: flex;
+    align-items: center;
 }
 
 .list a:hover{
@@ -58,6 +60,7 @@ body{
 
 .list img{
     margin-right: 12px;
+    border: 1px solid black;
 }
 
 
@@ -126,9 +129,8 @@ body{
     display: flex;
     width: 570px;
     transition: transform 0.3s ease-in;
+    padding-bottom: .5em;
 }
-
-
 
 .spaced_container{
     display: flex;
