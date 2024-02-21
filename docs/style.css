@@ -60,7 +60,6 @@ body{
 
 .list img{
     margin-right: 12px;
-    border: 1px solid black;
 }
 
 
@@ -132,6 +131,14 @@ body{
     padding-bottom: .5em;
 }
 
+.slide-son{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slide-son p{
+    padding-bottom: 5px;
+}
 .spaced_container{
     display: flex;
     margin: 0 auto;
@@ -147,7 +154,6 @@ body{
     background-image: url(images/pessoa.jpg);
     background-position: center;
     background-size: cover;
-    border: 1px solid black;
 }
 
 .post_container{
