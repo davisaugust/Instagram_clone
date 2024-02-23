@@ -185,6 +185,23 @@ body{
     display: block;
     aspect-ratio: 1;
 }
+.post-icons{
+    display: flex;
+    border: 1px solid black;
+    padding-top: .5em;
+    gap: 1em;
+}
+.post-icons img{
+    width: 25px;
+    cursor: pointer;
+}
+.post-icons 
+.favorite-icon{
+    padding-left: 100;
+}
+.post-icons img:hover{
+    opacity: .5;
+}
 
 .side_perfil_container{
     height: 100%;
