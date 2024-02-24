@@ -186,8 +186,8 @@ body{
     aspect-ratio: 1;
 }
 .post-icons{
+    position: relative;
     display: flex;
-    border: 1px solid black;
     padding-top: .5em;
     gap: 1em;
 }
@@ -197,7 +197,9 @@ body{
 }
 .post-icons 
 .favorite-icon{
-    padding-left: 100;
+    margin-left: auto;
+    position: relative;
+    left: 22em;
 }
 .post-icons img:hover{
     opacity: .5;
